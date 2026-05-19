@@ -1,11 +1,14 @@
 <div class="container">
   <h1>{{ title() }}</h1>
-  <app-cuadrado class="v"[colorfondo]="coloractual()"></app-cuadrado>
-</div>
+  <app-cuadrado class="v" [colorfondo]="coloractual()"></app-cuadrado>
 
-<div class="botones">
-<button (click)="actualizarcolor('Red')">rojo</button>
-<button (click)="actualizarcolor('Green')">verde</button>
-<button (click)="actualizarcolor('Blue')">azul</button>
-<button (click)="actualizarcolor('Yellow')">amarillo</button>
+  <h1>{{ nombredelcolor() }}</h1>
+
+  <div class="botones">
+    <button (click)="actualizarcolor('Red')">rojo</button>
+    <button (click)="actualizarcolor('Green')">verde</button>
+    <button (click)="actualizarcolor('Blue')">azul</button>
+    <button (click)="actualizarcolor('Yellow')">amarillo</button>
+    
+  </div>
 </div>
